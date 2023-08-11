@@ -1,0 +1,741 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: auto;
+}
+
+#me {
+  background-image: url("/assets/pict/gamerBackground.jpg");
+}
+#me .container-fluid .navbar {
+  align-items: center;
+  justify-content: space-between;
+}
+#me .container-fluid .navbar .navbar-brand {
+  font-family: fastHand;
+  margin-left: 10px;
+  font-size: 2em;
+  padding: 7px;
+  width: 60px;
+  height: 60px;
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid black;
+}
+#me .container-fluid .navbar #btnBars {
+  background: transparent;
+  border: transparent;
+  font-size: 1.6em;
+  display: none;
+}
+#me .container-fluid .navbar .navbar-nav .nav-link {
+  color: azure;
+  font-family: linkStart;
+  letter-spacing: 6px;
+  font-size: 1.6em;
+  margin-left: 20px;
+  margin-right: 30px;
+  font-weight: bold;
+}
+#me .container-fluid .navbar .navbar-nav .nav-link:hover {
+  color: darkred;
+}
+#me .container-fluid .myProfil {
+  color: rgb(165, 8, 165);
+  height: 700px;
+  text-align: center;
+  position: relative;
+  top: -30%;
+  left: 0%;
+  transform: translate(0%, 35%);
+}
+#me .container-fluid .myProfil .myName {
+  width: 30%;
+  display: block;
+  margin: auto;
+  background-color: #171a21;
+  border: 1px solid black;
+  border-radius: 40px;
+  font-family: emizen;
+  letter-spacing: 6px;
+  font-size: 3.2em;
+}
+#me .container-fluid .myProfil .myJobs {
+  font-size: 1.9em;
+  font-family: olney;
+  color: rgb(0, 0, 87);
+  text-shadow: 1px 2px 0px rgba(92, 11, 0, 0.274);
+}
+
+.aboutMe {
+  background-color: rgb(31, 31, 31);
+}
+.aboutMe .about {
+  padding-top: 12px;
+  color: azure;
+  font-size: 2.1em;
+  text-align: center;
+  font-family: emizen;
+  letter-spacing: 4px;
+}
+.aboutMe #myStory {
+  padding: 20px;
+  flex-direction: row;
+  align-items: center;
+}
+.aboutMe #myStory img {
+  width: 100%;
+  height: 600px;
+}
+.aboutMe .meIdentify {
+  color: azure;
+  line-height: 65px;
+}
+.aboutMe .meIdentify .describeMe {
+  font-size: 1.6em;
+  font-family: olney;
+  letter-spacing: 2px;
+}
+
+.Capacity {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/pict/capacityBackground.jpg");
+}
+.Capacity .mySuperPower {
+  color: azure;
+  margin: 5px auto;
+  text-align: center;
+  letter-spacing: 4px;
+  font-family: emizen;
+}
+.Capacity #myListCapacities .col-lg-8 {
+  margin-top: 60px;
+}
+.Capacity #myListCapacities .col-lg-8 #frontEnd .front, .Capacity #myListCapacities .col-lg-8 #frontEnd .back, .Capacity #myListCapacities .col-lg-8 #backEnd .front, .Capacity #myListCapacities .col-lg-8 #backEnd .back {
+  color: azure;
+  font-size: 2em;
+  margin-left: 80px;
+  letter-spacing: 4px;
+  font-family: emizen;
+}
+.Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-inner .carousel-item .row .col-lg-4, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-inner .carousel-item .row .col-lg-4 {
+  text-align: center;
+}
+.Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-inner .carousel-item .row .col-lg-4 #html, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-inner .carousel-item .row .col-lg-4 #html {
+  height: 300px;
+  max-width: 220px;
+}
+.Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-inner .carousel-item .row .col-lg-4 #css, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-inner .carousel-item .row .col-lg-4 #css {
+  height: 280px;
+  max-width: 160px;
+  margin-top: 17px;
+}
+.Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-inner .carousel-item .row .col-lg-4 #js, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-inner .carousel-item .row .col-lg-4 #js {
+  height: 240px;
+  max-width: 180px;
+  margin-top: 60px;
+}
+.Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-inner .carousel-item .row .col-lg-4 #scss, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-inner .carousel-item .row .col-lg-4 #scss {
+  height: 240px;
+  max-width: 180px;
+  margin-left: 20px;
+  margin-top: 17px;
+}
+.Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-inner .carousel-item .row .col-lg-4 #bootstrap, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-inner .carousel-item .row .col-lg-4 #bootstrap {
+  height: 260px;
+  max-width: 560px;
+  margin-top: 17px;
+}
+.Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-inner .carousel-item .row .col-lg-4 #reactJs, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-inner .carousel-item .row .col-lg-4 #reactJs {
+  height: 290px;
+  max-width: 320px;
+  margin-top: 17px;
+}
+.Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-inner .carousel-item .row .col-lg-12 #angular, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-inner .carousel-item .row .col-lg-12 #angular {
+  height: 240px;
+  max-width: 950px;
+  margin-top: 21px;
+}
+.Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-control-next, .Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-control-prev, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-control-next, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-control-prev {
+  margin-top: 120px;
+}
+.Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-control-next .carousel-control-next-icon, .Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-control-prev .carousel-control-next-icon, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-control-next .carousel-control-next-icon, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-control-prev .carousel-control-next-icon {
+  margin-left: 30px;
+}
+.Capacity #myListCapacities #myCVMF .myCV .img-fluid {
+  width: 100%;
+  margin-top: 40px;
+  max-width: 550px;
+  border: 1px solid black;
+}
+.Capacity #myListCapacities #myCVMF .myCV #btnDownload {
+  padding: 5px;
+  margin: auto;
+  display: block;
+  border-radius: 40px;
+  border: 1px solid azure;
+  background-color: darkgreen;
+}
+
+#myProjets {
+  margin: -16px auto;
+  padding: 10px 0px 30px 0px;
+  background-color: rgb(48, 48, 48);
+}
+#myProjets .nameProjet {
+  color: azure;
+  margin: 5px auto;
+  text-align: center;
+  letter-spacing: 4px;
+  font-family: emizen;
+}
+#myProjets #listProjets {
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 0%;
+}
+#myProjets #listProjets .col-lg-4 .img-fluid {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  max-width: 520px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+  transition: all 0.25ms ease;
+  border: 1px solid transparent;
+}
+#myProjets #listProjets .col-lg-4 .img-fluid:hover {
+  opacity: 0.5;
+}
+#myProjets .lienProjets {
+  text-align: center;
+}
+#myProjets .lienProjets .lien {
+  color: azure;
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-family: linkStart;
+}
+#myProjets .lienProjets .lien:hover {
+  color: darkred;
+}
+
+#contact {
+  margin-top: -20px;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/pict/contactBackground.jpeg");
+}
+#contact .titleContact {
+  color: azure;
+  text-align: center;
+  font-family: emizen;
+  letter-spacing: 4px;
+}
+#contact .contactModal {
+  padding-right: 18px;
+  padding-bottom: 20px;
+  width: 50%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 40px;
+  background-color: black;
+  border: 1px solid black;
+}
+#contact .contactModal #contactMe {
+  margin-left: 10px;
+  text-align: center;
+}
+#contact .contactModal #contactMe .col-lg-6 input {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  color: white;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#contact .contactModal #contactMe .col-lg-12 textarea {
+  width: 100%;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#contact .contactModal #btnSend {
+  border: none;
+  display: block;
+  cursor: pointer;
+  margin: 0px auto;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: darkred;
+  transition: all 0.25ms ease;
+}
+#contact .contactModal #btnSend:active {
+  transform: translateY(8px);
+  background-color: #075509;
+}
+
+#sideCanvas {
+  height: 220px;
+  width: 100%;
+  max-width: 280px;
+  background-color: black;
+  border-radius: 0px 0px 0px 40px;
+}
+#sideCanvas .offcanvas-body #btnCloseCanvas {
+  position: relative;
+  top: -10px;
+  left: 87%;
+  color: azure;
+  font-size: 1.8em;
+  border: transparent;
+  background: transparent;
+}
+#sideCanvas .offcanvas-body .containNav {
+  margin: -15px auto;
+  text-align: center;
+}
+#sideCanvas .offcanvas-body .containNav .navbar-nav {
+  line-height: 25px;
+}
+#sideCanvas .offcanvas-body .containNav .navbar-nav .nav-item a {
+  color: azure;
+  font-size: 1.6em;
+  font-family: linkStart;
+}
+#sideCanvas .offcanvas-body .containNav .navbar-nav .nav-item a:hover {
+  color: darkred;
+}
+
+#starfield .modal-dialog .modal-content, #wellife .modal-dialog .modal-content, #eaglePC .modal-dialog .modal-content, #pixelsGeek .modal-dialog .modal-content {
+  color: azure;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/pict/modalBackground.jpeg");
+}
+#starfield .modal-dialog .modal-content .btnClose, #wellife .modal-dialog .modal-content .btnClose, #eaglePC .modal-dialog .modal-content .btnClose, #pixelsGeek .modal-dialog .modal-content .btnClose {
+  position: relative;
+  top: 10%;
+  right: -47%;
+  color: azure;
+  font-size: 1.7em;
+  margin-bottom: -26px;
+  border: transparent;
+  background: transparent;
+}
+#starfield .modal-dialog .modal-content .btnClose:hover, #wellife .modal-dialog .modal-content .btnClose:hover, #eaglePC .modal-dialog .modal-content .btnClose:hover, #pixelsGeek .modal-dialog .modal-content .btnClose:hover {
+  color: darkred;
+}
+#starfield .modal-dialog .modal-content .modal-header, #wellife .modal-dialog .modal-content .modal-header, #eaglePC .modal-dialog .modal-content .modal-header, #pixelsGeek .modal-dialog .modal-content .modal-header {
+  border: transparent;
+}
+#starfield .modal-dialog .modal-content .modal-header .modal-title, #wellife .modal-dialog .modal-content .modal-header .modal-title, #eaglePC .modal-dialog .modal-content .modal-header .modal-title, #pixelsGeek .modal-dialog .modal-content .modal-header .modal-title {
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  font-family: emizen;
+}
+#starfield .modal-dialog .modal-content .modal-body, #wellife .modal-dialog .modal-content .modal-body, #eaglePC .modal-dialog .modal-content .modal-body, #pixelsGeek .modal-dialog .modal-content .modal-body {
+  border: transparent;
+}
+#starfield .modal-dialog .modal-content .modal-body .img-fluid, #wellife .modal-dialog .modal-content .modal-body .img-fluid, #eaglePC .modal-dialog .modal-content .modal-body .img-fluid, #pixelsGeek .modal-dialog .modal-content .modal-body .img-fluid {
+  height: 550px;
+}
+#starfield .modal-dialog .modal-content .modal-footer, #wellife .modal-dialog .modal-content .modal-footer, #eaglePC .modal-dialog .modal-content .modal-footer, #pixelsGeek .modal-dialog .modal-content .modal-footer {
+  text-align: center;
+  border: transparent;
+}
+#starfield .modal-dialog .modal-content .modal-footer .hrefShowSite, #wellife .modal-dialog .modal-content .modal-footer .hrefShowSite, #eaglePC .modal-dialog .modal-content .modal-footer .hrefShowSite, #pixelsGeek .modal-dialog .modal-content .modal-footer .hrefShowSite {
+  display: flex;
+  flex-direction: row;
+}
+#starfield .modal-dialog .modal-content .modal-footer .hrefShowSite a, #wellife .modal-dialog .modal-content .modal-footer .hrefShowSite a, #eaglePC .modal-dialog .modal-content .modal-footer .hrefShowSite a, #pixelsGeek .modal-dialog .modal-content .modal-footer .hrefShowSite a {
+  color: azure;
+  text-decoration: none;
+}
+#starfield .modal-dialog .modal-content .modal-footer .hrefShowSite a:hover, #wellife .modal-dialog .modal-content .modal-footer .hrefShowSite a:hover, #eaglePC .modal-dialog .modal-content .modal-footer .hrefShowSite a:hover, #pixelsGeek .modal-dialog .modal-content .modal-footer .hrefShowSite a:hover {
+  text-shadow: -3px 0px 8px #D9420B;
+}
+#starfield .modal-dialog .modal-content .modal-footer p, #wellife .modal-dialog .modal-content .modal-footer p, #eaglePC .modal-dialog .modal-content .modal-footer p, #pixelsGeek .modal-dialog .modal-content .modal-footer p {
+  font-family: olney;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 1.4em;
+}
+
+#projetsList {
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/pict/acInfinity.jpeg");
+}
+#projetsList .container-fluid .meProjet {
+  padding: 10px;
+  color: azure;
+  margin: 0px auto;
+  text-align: center;
+  letter-spacing: 4px;
+  font-family: emizen;
+}
+#projetsList .container-fluid #list {
+  text-align: center;
+}
+#projetsList .container-fluid #list .col-lg-4 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+#projetsList .container-fluid #list .col-lg-4 .img-fluid {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  max-width: 520px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+  transition: all 0.25ms ease;
+  border: 1px solid transparent;
+}
+#projetsList .container-fluid #list .col-lg-4 .img-fluid:hover {
+  opacity: 0.5;
+}
+#projetsList .container-fluid #list .col-lg-4 .card {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  max-width: 520px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.25ms ease;
+  border: 1px solid black;
+}
+#projetsList .container-fluid #list .col-lg-4 .card:hover {
+  opacity: 0.5;
+}
+#projetsList .container-fluid #list .col-lg-4 .card .card-body p {
+  letter-spacing: 4px;
+  font-family: emizen;
+  font-size: 2.6em;
+  margin: 100px auto;
+}
+
+@font-face {
+  font-family: emizen;
+  src: url(./assets/fonts/emizen.otf);
+}
+@font-face {
+  font-family: linkStart;
+  src: url(./assets/fonts/linkStart.otf);
+}
+@font-face {
+  font-family: RoundControl;
+  src: url(./assets/fonts/roundControl.otf);
+}
+@font-face {
+  font-family: olney;
+  src: url(./assets/fonts/olney.otf);
+}
+@font-face {
+  font-family: fastHand;
+  src: url(./assets/fonts/fastHand.otf);
+}
+@media screen and (max-width: 1440px) {
+  .Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-control-next, .Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-control-prev, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-control-next, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-control-prev {
+    margin-top: 120px;
+  }
+  .Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-control-next .carousel-control-next-icon, .Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-control-prev .carousel-control-next-icon, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-control-next .carousel-control-next-icon, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-control-prev .carousel-control-next-icon {
+    margin-left: 60px;
+  }
+  .Capacity #myListCapacities #myCVMF .myCV {
+    margin-top: 0px;
+  }
+  .Capacity #myListCapacities #myCVMF .myCV .img-fluid {
+    height: 750px;
+    max-width: 415px;
+    border: 1px solid black;
+  }
+  .Capacity #myListCapacities #myCVMF #btnDownload {
+    display: block;
+    margin: auto;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 1037px) {
+  #me .container-fluid .navbar #btnBars {
+    display: block;
+  }
+  #me .container-fluid .navbar .navbar-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #about-me #myStory .col-lg-5 .img-fluid {
+    height: 600px;
+  }
+  #about-me #myStory .col-lg-7 .meIdentify {
+    line-height: 40px;
+  }
+  #myProjets .nameProjet {
+    font-size: 2.1em;
+  }
+  #myProjets .lienProjets .lien {
+    margin-top: 10px;
+    font-size: 1.4em;
+  }
+  #contact .contactModal {
+    padding-bottom: 15px;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .Capacity .mySuperPower {
+    font-size: 2.8em;
+    margin-left: 40px;
+  }
+  .Capacity #myListCapacities .col-lg-8 #frontEnd .front, .Capacity #myListCapacities .col-lg-8 #frontEnd .back, .Capacity #myListCapacities .col-lg-8 #backEnd .front, .Capacity #myListCapacities .col-lg-8 #backEnd .back {
+    text-align: center;
+  }
+  .Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-control-next, .Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-control-prev, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-control-next, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-control-prev {
+    margin-top: 120px;
+  }
+  .Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-control-next .carousel-control-next-icon, .Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-control-prev .carousel-control-next-icon, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-control-next .carousel-control-next-icon, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-control-prev .carousel-control-next-icon {
+    margin-left: 60px;
+  }
+  .Capacity #myListCapacities #myCVMF {
+    margin-top: -30px;
+    text-align: center;
+  }
+  .Capacity #myListCapacities #myCVMF .myCV {
+    margin-top: 0px;
+  }
+  .Capacity #myListCapacities #myCVMF .myCV .img-fluid {
+    height: 750px;
+    max-width: 425px;
+    border: 1px solid black;
+  }
+  .Capacity #myListCapacities #myCVMF #btnDownload {
+    display: block;
+    margin: auto;
+    padding-right: 10px;
+  }
+  #myProjets #listProjets {
+    margin-top: -2px;
+  }
+  #myProjets #listProjets .col-lg-4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #myProjets #listProjets .col-lg-4 .img-fluid {
+    max-width: 480px;
+  }
+  #myProjets .lienProjets {
+    margin-top: -18px;
+    margin-bottom: 12px;
+  }
+  #myProjets .lienProjets .lien {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 959px) {
+  #me .container-fluid .myProfil .myName {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 922px) {
+  #starfield .modal-dialog .modal-content .modal-footer .hrefShowSite, #wellife .modal-dialog .modal-content .modal-footer .hrefShowSite, #eaglePC .modal-dialog .modal-content .modal-footer .hrefShowSite, #pixelsGeek .modal-dialog .modal-content .modal-footer .hrefShowSite {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  #about-me #myStory .col-lg-5 .img-fluid {
+    height: 600px;
+  }
+  #about-me #myStory .col-lg-7 .meIdentify {
+    margin-top: 10px;
+    text-align: center;
+    line-height: 40px;
+  }
+  #myProjets .nameProjet {
+    font-size: 2.4em;
+  }
+  #myProjets #listProjets {
+    margin-top: -2px;
+  }
+  #myProjets #listProjets .col-lg-4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #myProjets #listProjets .col-lg-4 .img-fluid {
+    max-width: 480px;
+  }
+  #myProjets .lienProjets {
+    margin-top: -18px;
+    margin-bottom: 12px;
+  }
+  #myProjets .lienProjets .lien {
+    font-size: 1.6em;
+  }
+  #contact .titleContact {
+    margin-top: -15px;
+  }
+  .Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-inner .carousel-item .row .col-lg-12 #angular, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-inner .carousel-item .row .col-lg-12 #angular {
+    height: 200px;
+    max-width: 550px;
+  }
+  .Capacity #myListCapacities #myCVMF {
+    margin-top: -30px;
+    text-align: center;
+  }
+  .Capacity #myListCapacities #myCVMF .myCV {
+    margin-top: 0px;
+  }
+  .Capacity #myListCapacities #myCVMF .myCV .img-fluid {
+    height: 750px;
+    max-width: 425px;
+    border: 1px solid black;
+  }
+  .Capacity #myListCapacities #myCVMF #btnDownload {
+    display: block;
+    margin: auto;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 603px) {
+  .Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-inner .carousel-item .row .col-lg-12 #angular, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-inner .carousel-item .row .col-lg-12 #angular {
+    height: 200px;
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 580px) {
+  #myProjets .nameProjet {
+    font-size: 2.4em;
+  }
+  #myProjets #listProjets #projet .img-fluid {
+    max-width: 280px;
+  }
+  #myProjets .lienProjets {
+    margin-top: -18px;
+    margin-bottom: 12px;
+  }
+  #myProjets .lienProjets .lien {
+    font-size: 1.6em;
+  }
+  .Capacity .mySuperPower {
+    font-size: 1.8em;
+  }
+  .Capacity #myListCapacities .col-lg-8 #frontEnd .front, .Capacity #myListCapacities .col-lg-8 #frontEnd .back, .Capacity #myListCapacities .col-lg-8 #backEnd .front, .Capacity #myListCapacities .col-lg-8 #backEnd .back {
+    font-size: 1.6em;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #starfield .modal-dialog, #wellife .modal-dialog, #eaglePC .modal-dialog, #pixelsGeek .modal-dialog {
+    display: block;
+    margin: auto;
+  }
+  #starfield .modal-dialog .modal-content .modal-footer .langageUse p, #wellife .modal-dialog .modal-content .modal-footer .langageUse p, #eaglePC .modal-dialog .modal-content .modal-footer .langageUse p, #pixelsGeek .modal-dialog .modal-content .modal-footer .langageUse p {
+    font-size: 1.3em;
+  }
+  #starfield .modal-dialog .modal-content .modal-footer .hrefShowSite p, #wellife .modal-dialog .modal-content .modal-footer .hrefShowSite p, #eaglePC .modal-dialog .modal-content .modal-footer .hrefShowSite p, #pixelsGeek .modal-dialog .modal-content .modal-footer .hrefShowSite p {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Capacity .mySuperPower {
+    font-size: 1.6em;
+    margin-right: 22px;
+  }
+  .Capacity #myListCapacities .col-lg-8 #frontEnd .front, .Capacity #myListCapacities .col-lg-8 #frontEnd .back, .Capacity #myListCapacities .col-lg-8 #backEnd .front, .Capacity #myListCapacities .col-lg-8 #backEnd .back {
+    font-size: 1.6em;
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #me .container-fluid .myProfil .myName {
+    width: 70%;
+  }
+  #about-me #myStory .col-lg-5 .img-fluid {
+    height: 600px;
+  }
+  #about-me #myStory .col-lg-7 .meIdentify {
+    line-height: 35px;
+  }
+  #myProjets .nameProjet {
+    font-size: 2.4em;
+  }
+  #myProjets #listProjets #projet {
+    margin: 15px;
+  }
+  #myProjets #listProjets #projet .img-fluid {
+    max-width: 320px;
+    margin-right: 30px;
+  }
+  #myProjets .lienProjets {
+    margin-top: -18px;
+    margin-bottom: 12px;
+  }
+  #myProjets .lienProjets .lien {
+    font-size: 1.6em;
+  }
+  .Capacity #myListCapacities #myCVMF .myCV .img-fluid {
+    margin-top: 40px;
+    max-width: 360px;
+    border: 1px solid black;
+  }
+  #contact .contactModal {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 375px) {
+  #me .container-fluid .myProfil .myName {
+    width: 80%;
+  }
+  #myProjets .nameProjet {
+    font-size: 2.4em;
+  }
+  #myProjets #listProjets #projet {
+    margin: 15px;
+  }
+  #myProjets #listProjets #projet .img-fluid {
+    max-width: 260px;
+    margin-right: 45px;
+  }
+  #myProjets .lienProjets {
+    margin-top: -18px;
+    margin-bottom: 12px;
+  }
+  #myProjets .lienProjets .lien {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 320px) {
+  #me .container-fluid .myProfil .myName {
+    width: 92%;
+  }
+  #contact .contactModal {
+    width: 92%;
+  }
+}/*# sourceMappingURL=styles.css.map */
