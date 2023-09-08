@@ -365,66 +365,6 @@ body {
     }
 }
 
-// MODAL
-#starfield, #wellife, #eaglePC, #pixelsGeek {
-  .modal-dialog {
-    .modal-content {
-      color: azure;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-image: url('/assets/pict/modalBackground.jpeg');
-      .btnClose {
-        position: relative;
-        top: 10%;
-        right: -47%;
-        color: azure;
-        font-size: 1.7em;
-        margin-bottom: -26px;
-        border: transparent;
-        background: transparent;
-        &:hover {
-          color: darkred;
-        }
-      }
-      .modal-header {
-        border: transparent;
-        .modal-title {
-          font-size: 1.6em;
-          letter-spacing: 4px;
-          font-family: emizen;
-        }
-      }
-      .modal-body {
-        border: transparent;
-        .img-fluid {
-          height: 550px;
-        }
-      }
-      .modal-footer {
-        text-align: center;
-        border: transparent;
-        .hrefShowSite {
-          @include flex (row);
-          a {
-            color: azure;
-            text-decoration: none;
-            &:hover {
-              text-shadow: -3px 0px 8px #D9420B;
-            }
-          }
-        }
-        p {
-          font-family: olney;
-          margin-right: 15px;
-          margin-left: 15px;
-          font-size: 1.4em;
-        }
-      }
-    }
-  }
-}
-
 // PROJETS WEB
 #projetsList {
     height: auto;
