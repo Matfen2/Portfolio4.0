@@ -118,14 +118,8 @@
 <section class="idea" id="myProjets">
     <h1 class="nameProjet">MES PROJETS</h1>
     <div class="row" id="listProjets">
-        <div class="col-lg-4" id="projet">
-            <img src="/assets/pict/projets/starfieldLogo.png" routerLink="['show-projet']" class="img-fluid w-100" alt="Starfield" />
-        </div>
-        <div class="col-lg-4" id="projet">
-            <img src="/assets/pict/projets/wellifeLogo.png" data-bs-toggle="modal" data-bs-target="#wellife" class="img-fluid w-100" alt="Wellife" />
-        </div>
-        <div class="col-lg-4" id="projet">
-            <img src="/assets/pict/projets/EaglePCLogo.png" data-bs-toggle="modal" data-bs-target="#eaglePC" class="img-fluid w-100" alt="EaglePC" />
+        <div class="col-lg-4" [id]="projet.id" *ngFor="let projet of projets">
+            <img [src]="projet.pict" routerLink="['show-projet']" class="img-fluid w-100" alt="Starfield" appJobs />
         </div>
     </div>
     <div class="lienProjets">

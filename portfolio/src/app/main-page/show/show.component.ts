@@ -6,18 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./show.component.css']
 })
 export class ShowComponent {
-  projet = [
+  projets = [
     {
       id: 1,
       pict: "/assets/pict/projets/starfieldLogo.png",
     },
     {
       id: 2,
-      pict: "/assets/pict/projets/wellifeLogo.png",
+      pict: "/assets/pict/projets/bethesdaLogo.png",
     },
     {
       id: 3,
-      pict: "/src/assets/pict/projets/EaglePCLogo.png"
+      pict: "/assets/pict/projets/animusLogo.png"
     }
   ]
 }

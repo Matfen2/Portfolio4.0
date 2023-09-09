@@ -215,9 +215,6 @@ body {
   transition: all 0.25ms ease;
   border: 1px solid transparent;
 }
-#myProjets #listProjets .col-lg-4 .img-fluid:hover {
-  opacity: 0.5;
-}
 #myProjets .lienProjets {
   text-align: center;
 }
@@ -326,14 +323,14 @@ body {
 }
 
 #projetsList {
-  height: auto;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("/assets/pict/acInfinity.jpeg");
 }
 #projetsList .container-fluid .meProjet {
-  padding: 10px;
+  padding-top: 40px;
   color: azure;
   margin: 0px auto;
   text-align: center;
@@ -341,6 +338,7 @@ body {
   font-family: emizen;
 }
 #projetsList .container-fluid #list {
+  margin: -25px auto;
   text-align: center;
 }
 #projetsList .container-fluid #list .col-lg-4 {
@@ -357,9 +355,6 @@ body {
   border-radius: 40px;
   transition: all 0.25ms ease;
   border: 1px solid transparent;
-}
-#projetsList .container-fluid #list .col-lg-4 .img-fluid:hover {
-  opacity: 0.5;
 }
 #projetsList .container-fluid #list .col-lg-4 .card {
   display: block;

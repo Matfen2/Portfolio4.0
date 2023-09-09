@@ -13,11 +13,10 @@ export class ShowProjetComponent implements OnInit  {
   projetDetails = [
     {
       id: 1,
-      mainPict: '',
+      mainPict: '/assets/pict/projets/starfieldSite.png',
       langageOne: 'ANGULAR',
       langageTwo: 'TYPESCRIPT',
       langageThree: 'SCSS',
-      objectifOfSite: '',
       hrefGithub: '',
       hrefSite: '',
     },
@@ -27,7 +26,6 @@ export class ShowProjetComponent implements OnInit  {
       langageOne: 'ANGULAR',
       langageTwo: 'TYPESCRIPT',
       langageThree: 'SCSS',
-      objectifOfSite: '',
       hrefGithub: '',
       hrefSite: '',
     },
@@ -37,7 +35,6 @@ export class ShowProjetComponent implements OnInit  {
       langageOne: 'ANGULAR',
       langageTwo: 'TYPESCRIPT',
       langageThree: 'SCSS',
-      objectifOfSite: '',
       hrefGithub: '',
       hrefSite: '',
     }

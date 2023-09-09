@@ -4,6 +4,7 @@ import { ShowComponent } from './show/show.component';
 import { ProjetsComponent } from './projets/projets.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ShowProjetComponent } from './show-projet/show-projet.component';
+import { JobsDirective } from '../jobs.directive';
 
 const routesProjets: Routes = [
   { path: '', redirectTo: '/show', pathMatch: "full" },
@@ -13,7 +14,7 @@ const routesProjets: Routes = [
 ];
 
 @NgModule({
-  declarations: [ShowComponent, ProjetsComponent, ShowProjetComponent],
+  declarations: [ShowComponent, ProjetsComponent, ShowProjetComponent, JobsDirective],
   imports: [
     CommonModule,
     RouterModule.forChild(routesProjets)

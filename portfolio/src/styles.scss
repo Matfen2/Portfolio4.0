@@ -241,9 +241,6 @@ body {
         border-radius: 40px;
         transition: all 0.25ms ease;
         border: 1px solid transparent;
-        &:hover {
-          opacity: 0.5;
-        }
       }
     }
   }
@@ -367,14 +364,14 @@ body {
 
 // PROJETS WEB
 #projetsList {
-    height: auto;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('/assets/pict/acInfinity.jpeg');
     .container-fluid {
         .meProjet {
-            padding: 10px;
+            padding-top: 40px;
             color: azure;
             margin: 0px auto;
             text-align: center;
@@ -382,6 +379,7 @@ body {
             font-family: emizen;
         }
         #list {
+          margin: -25px auto;
             text-align: center;
             .col-lg-4 {
                 margin-top: 80px;
@@ -395,9 +393,6 @@ body {
                     border-radius: 40px;
                     transition: all 0.25ms ease;
                     border: 1px solid transparent;
-                    &:hover {
-                    opacity: 0.5;
-                    }
                 }
                 .card {
                     display: block;
