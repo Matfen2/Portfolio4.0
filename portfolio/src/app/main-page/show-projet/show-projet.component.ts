@@ -39,7 +39,7 @@ export class ShowProjetComponent implements OnInit {
       langageOne: 'ANGULAR',
       langageTwo: 'TYPESCRIPT',
       langageThree: 'SCSS',
-      hrefGithub: '',
+      hrefGithub: 'https://github.com/Matfen2/BethesdaGamesStudio',
       hrefSite: '',
     },
     {
