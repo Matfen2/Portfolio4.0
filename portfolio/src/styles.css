@@ -380,6 +380,90 @@ body {
   margin: 100px auto;
 }
 
+.showProjet {
+  height: 100vh;
+  padding-top: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/pict/modalBackground.jpeg");
+}
+.showProjet #btnCloseProjet {
+  position: relative;
+  top: 0%;
+  left: 99%;
+  margin-bottom: -85px;
+  transform: translate(-50%, -50%);
+  color: azure;
+  font-size: 1.7em;
+  background: transparent;
+  border: transparent;
+}
+.showProjet .nameProjet {
+  color: azure;
+  font-size: 2.4em;
+  text-align: center;
+  font-family: linkStart;
+}
+.showProjet .containProjet {
+  text-align: center;
+}
+.showProjet .containProjet .img-fluid {
+  margin: 15px auto;
+  height: 650px;
+  max-width: 1150px;
+}
+.showProjet .containProjet .listFrameworks {
+  margin: 7px auto;
+}
+.showProjet .containProjet .listFrameworks #btnFirstLangage {
+  font-size: 1.5em;
+  font-family: RoundControl;
+  color: azure;
+  background: rgb(180, 2, 2);
+  border: 1px solid rgb(180, 2, 2);
+}
+.showProjet .containProjet .listFrameworks #btnSecondLangage {
+  font-size: 1.5em;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-family: RoundControl;
+  color: azure;
+  background: rgb(0, 67, 190);
+  border: 1px solid rgb(0, 67, 190);
+}
+.showProjet .containProjet .listFrameworks #btnThirdLangage {
+  font-size: 1.5em;
+  font-family: RoundControl;
+  color: azure;
+  background: rgb(137, 4, 177);
+  border: 1px solid rgb(137, 4, 177);
+}
+.showProjet .containProjet .listHref {
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  display: flex;
+  flex-direction: row;
+  margin: 24px auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.showProjet .containProjet .listHref .point {
+  color: azure;
+  font-size: 1.4em;
+  font-family: olney;
+}
+.showProjet .containProjet .listHref .point .site, .showProjet .containProjet .listHref .point .github {
+  color: azure;
+  font-family: olney;
+  text-decoration: none;
+}
+.showProjet .containProjet .listHref .point .site:hover, .showProjet .containProjet .listHref .point .github:hover {
+  opacity: 0.75;
+}
+
 @font-face {
   font-family: emizen;
   src: url(./assets/fonts/emizen.otf);
@@ -420,6 +504,12 @@ body {
     margin: auto;
     padding-right: 10px;
   }
+  .showProjet {
+    height: 100vh;
+  }
+  .showProjet .containProjet .img-fluid {
+    height: 550px;
+  }
 }
 @media screen and (max-width: 1037px) {
   #me .container-fluid .navbar #btnBars {
@@ -446,6 +536,17 @@ body {
   #contact .contactModal {
     padding-bottom: 15px;
     width: 70%;
+  }
+  .showProjet {
+    height: 100vh;
+  }
+  .showProjet #btnCloseProjet {
+    top: 1%;
+    left: 98%;
+  }
+  .showProjet .containProjet .img-fluid {
+    height: 520px;
+    max-width: 950px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -561,6 +662,20 @@ body {
     margin: auto;
     padding-right: 10px;
   }
+  .showProjet {
+    height: 100vh;
+  }
+  .showProjet #btnCloseProjet {
+    top: 1%;
+    left: 98%;
+  }
+  .showProjet .containProjet .img-fluid {
+    height: 520px;
+    max-width: 710px;
+  }
+  .showProjet .containProjet .listHref .point {
+    font-size: 1.2em;
+  }
 }
 @media screen and (max-width: 603px) {
   .Capacity #myListCapacities .col-lg-8 #frontEnd .carousel-inner .carousel-item .row .col-lg-12 #angular, .Capacity #myListCapacities .col-lg-8 #backEnd .carousel-inner .carousel-item .row .col-lg-12 #angular {
@@ -647,6 +762,25 @@ body {
   #contact .contactModal {
     width: 85%;
   }
+  .showProjet {
+    height: 120vh;
+    height: 100vh;
+  }
+  .showProjet #btnCloseProjet {
+    top: 1%;
+    left: 96%;
+  }
+  .showProjet .containProjet .img-fluid {
+    height: 520px;
+    max-width: 410px;
+  }
+  .showProjet .containProjet .listFrameworks #btnFirstLangage, .showProjet .containProjet .listFrameworks #btnSecondLangage, .showProjet .containProjet .listFrameworks #btnThirdLangage {
+    font-size: 1.3em;
+  }
+  .showProjet .containProjet .listHref {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 375px) {
   #me .container-fluid .myProfil .myName {
@@ -669,6 +803,25 @@ body {
   #myProjets .lienProjets .lien {
     font-size: 1.6em;
   }
+  .showProjet {
+    height: 200vh;
+    height: 100vh;
+  }
+  .showProjet #btnCloseProjet {
+    top: 1%;
+    left: 96%;
+  }
+  .showProjet .containProjet .img-fluid {
+    height: 460px;
+    max-width: 350px;
+  }
+  .showProjet .containProjet .listFrameworks #btnFirstLangage, .showProjet .containProjet .listFrameworks #btnSecondLangage, .showProjet .containProjet .listFrameworks #btnThirdLangage {
+    font-size: 1.1em;
+  }
+  .showProjet .containProjet .listHref {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 320px) {
   #me .container-fluid .myProfil .myName {
@@ -676,5 +829,28 @@ body {
   }
   #contact .contactModal {
     width: 92%;
+  }
+  .showProjet {
+    height: 200vh;
+    height: 100vh;
+  }
+  .showProjet #btnCloseProjet {
+    top: 1%;
+    left: 96%;
+  }
+  .showProjet .containProjet .img-fluid {
+    height: 450px;
+    max-width: 280px;
+  }
+  .showProjet .containProjet .listFrameworks {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .showProjet .containProjet .listFrameworks #btnFirstLangage, .showProjet .containProjet .listFrameworks #btnSecondLangage, .showProjet .containProjet .listFrameworks #btnThirdLangage {
+    font-size: 1em;
+  }
+  .showProjet .containProjet .listHref {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=styles.css.map */

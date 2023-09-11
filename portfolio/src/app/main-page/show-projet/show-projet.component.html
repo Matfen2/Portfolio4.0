@@ -1,1 +1,16 @@
-<p>show-projet works!</p>
+<div class="showProjet" *ngIf="projetData">
+  <button type="button" id="btnCloseProjet" [routerLink]="['/show']"><i class="fas fa-times"></i></button>
+  <h2 class="nameProjet">{{ projetData.name }}</h2>
+  <div class="containProjet">
+    <img [src]="projetData.mainPict" alt="pictProjet" class="img-fluid w-100" />
+    <div class="listFrameworks">
+      <button type="button" id="btnFirstLangage">{{projetData.langageOne}}</button>
+      <button type="button" id="btnSecondLangage">{{projetData.langageTwo}}</button>
+      <button type="button" id="btnThirdLangage">{{projetData.langageThree}}</button>
+    </div>
+    <div class="listHref">
+      <li class="point">Lien du site : <a [href]="projetData.hrefSite" class="site">{{projetData.hrefSite}}</a></li>
+      <li class="point">Lien du Github : <a [href]="projetData.hrefGithub" class="github">{{projetData.hrefGithub}}</a></li>
+    </div>
+  </div>
+</div>

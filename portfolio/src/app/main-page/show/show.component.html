@@ -119,7 +119,7 @@
     <h1 class="nameProjet">MES PROJETS</h1>
     <div class="row" id="listProjets">
         <div class="col-lg-4" [id]="projet.id" *ngFor="let projet of projets">
-            <img [src]="projet.pict" routerLink="['show-projet']" class="img-fluid w-100" alt="Starfield" appJobs />
+            <img [src]="projet.pict" [routerLink]="['/show-projet', projet.id]" class="img-fluid w-100" alt="Starfield" appJobs />
         </div>
     </div>
     <div class="lienProjets">

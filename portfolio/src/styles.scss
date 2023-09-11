@@ -423,6 +423,89 @@ body {
     }
 }
 
+// SHOW PROJET
+.showProjet {
+  height: 100vh;
+  padding-top: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('/assets/pict/modalBackground.jpeg');
+  #btnCloseProjet {
+    position: relative;
+    top: 0%;
+    left: 99%;
+    margin-bottom: -85px;
+    transform: translate(-50%, -50%);
+    color: azure;
+    font-size: 1.7em;
+    background: transparent;
+    border: transparent;
+  }
+  .nameProjet {
+    color: azure;
+    font-size: 2.4em;
+    text-align: center;
+    font-family: linkStart;
+  }
+  .containProjet {
+    text-align: center;
+    .img-fluid {
+      margin: 15px auto;
+      height: 650px;
+      max-width: 1150px;
+    }
+    .listFrameworks {
+      margin: 7px auto;
+      #btnFirstLangage {
+        font-size: 1.5em;
+        font-family: RoundControl;
+        color: azure;
+        background: rgb(180, 2, 2);
+        border: 1px solid rgb(180, 2, 2);
+      }
+      #btnSecondLangage {
+        font-size: 1.5em;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-family: RoundControl;
+        color: azure;
+        background: rgb(0, 67, 190);
+        border: 1px solid rgb(0, 67, 190);
+      }
+      #btnThirdLangage {
+        font-size: 1.5em;
+        font-family: RoundControl;
+        color: azure;
+        background: rgb(137, 4, 177);
+        border: 1px solid rgb(137, 4, 177);
+      }
+    }
+    .listHref {
+      column-gap: 80px;
+      @include flex (row);
+      margin: 24px auto;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      list-style-type: none;
+      .point {
+        color: azure;
+        font-size: 1.4em;
+        font-family: olney;
+        .site, .github {
+          color: azure;
+          font-family: olney;
+          text-decoration: none;
+          &:hover {
+            opacity: 0.75;
+          }
+        }
+      }
+    }
+  }
+}
+
 // FONTS
 @font-face {
     font-family: emizen;
@@ -480,6 +563,14 @@ body {
     }
   }
   }
+  .showProjet {
+    height: 100vh;
+    .containProjet {
+      .img-fluid {
+        height: 550px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1037px) {
@@ -527,6 +618,19 @@ body {
     .contactModal {
       padding-bottom: 15px;
       width: 70%;
+    }
+  }
+  .showProjet {
+    #btnCloseProjet {
+      top: 1%;
+      left: 98%;
+    }
+    height: 100vh;
+    .containProjet {
+      .img-fluid {
+        height: 520px;
+        max-width: 950px;
+      }
     }
   }
 }
@@ -695,6 +799,24 @@ body {
           display: block;
           margin: auto;
           padding-right: 10px;
+        }
+      }
+    }
+  }
+  .showProjet {
+    #btnCloseProjet {
+      top: 1%;
+      left: 98%;
+    }
+    height: 100vh;
+    .containProjet {
+      .img-fluid {
+        height: 520px;
+        max-width: 710px;
+      }
+      .listHref {
+        .point {
+          font-size: 1.2em;
         }
       }
     }
@@ -868,6 +990,28 @@ body {
       width: 85%;
     }
   }
+  .showProjet {
+    height: 120vh;
+    #btnCloseProjet {
+      top: 1%;
+      left: 96%;
+    }
+    height: 100vh;
+    .containProjet {
+      .img-fluid {
+        height: 520px;
+        max-width: 410px;
+      }
+      .listFrameworks {
+        #btnFirstLangage, #btnSecondLangage, #btnThirdLangage {
+          font-size: 1.3em;
+        }
+      }
+      .listHref {
+        @include flex (column);
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -901,6 +1045,28 @@ body {
       }
     }
   }
+  .showProjet {
+    height: 200vh;
+    #btnCloseProjet {
+      top: 1%;
+      left: 96%;
+    }
+    height: 100vh;
+    .containProjet {
+      .img-fluid {
+        height: 460px;
+        max-width: 350px;
+      }
+      .listFrameworks {
+        #btnFirstLangage, #btnSecondLangage, #btnThirdLangage {
+          font-size: 1.1em;
+        }
+      }
+      .listHref {
+        @include flex (column);
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -916,6 +1082,29 @@ body {
   #contact {
     .contactModal {
       width: 92%;
+    }
+  }
+  .showProjet {
+    height: 200vh;
+    #btnCloseProjet {
+      top: 1%;
+      left: 96%;
+    }
+    height: 100vh;
+    .containProjet {
+      .img-fluid {
+        height: 450px;
+        max-width: 280px;
+      }
+      .listFrameworks {
+        column-gap: 20px;
+        #btnFirstLangage, #btnSecondLangage, #btnThirdLangage {
+          font-size: 1.0em;
+        }
+      }
+      .listHref {
+        @include flex (column);
+      }
     }
   }
 }
