@@ -123,7 +123,7 @@
         </div>
     </div>
     <div class="lienProjets">
-        <a routerLink="/projets" class="lien">VOIR MES AUTRES PROJETS</a>
+        <a [routerLink]="'/projets'" class="lien">VOIR MES AUTRES PROJETS</a>
     </div>
 </section>
 
@@ -131,27 +131,59 @@
 <section class="myContact" id="contact">
     <h1 class="titleContact">Contact</h1>
     <div class="contactModal">
-        <form action="/contact" method="post">
-            <label for="contactMe"></label>
-            <div class="row" id="contactMe">
-                <div class="col-lg-6">
-                    <input type="text" name="firstName" placeholder="Votre Prénom" required>
-                </div>
-                <div class="col-lg-6">
-                    <input type="text" name="lastName" placeholder="Votre Nom" required>
-                </div>
-                <div class="col-lg-6">
-                    <input type="text" name="addressEmail" placeholder="Votre Adresse Email" required>
-                </div>
-                <div class="col-lg-6">
-                    <input type="text" name="yourSubject" placeholder="Votre Sujet" required>
-                </div>
-                <div class="col-lg-12">
-                    <textarea name="message" cols="130" rows="6" placeholder="Votre Message" style="margin: 10px auto; background-color: rgba(255, 255, 255, 0.2)"></textarea>
+        <div class="form-area">
+           <form #contact="ngForm" (ngSubmit)="showContact(contact)">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label></label>
+                        <input type="text" class="form-control" name="pseudo" placeholder="Nom d'utilisateur" #pseudo="ngModel" [(ngModel)]="person.pseudo" minlength="10" [ngClass]="{'is.invalid': pseudo.touched && pseudo.invalid}" required />
+                        <div class="warning" *ngIf="pseudo.invalid && (pseudo.dirty || pseudo.touched)">
+                            <div class="alert alert-danger" *ngIf="pseudo.hasError('required')">Pseudo est requis</div>
+                            <div class="alert alert-danger" *ngIf="pseudo.hasError('required')">Pseudo doit contenir moins de 10 moins</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <label></label>
+                        <input type="email" class="form-control" name="email" placeholder="Adresse email" #email="ngModel" [(ngModel)]="person.email" [pattern]="'[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$'" [ngClass]="{'is.invalid': email.touched && email.invalid}" required />
+                        <div class="warning" *ngIf="email.invalid && (email.dirty || email.touched)">
+                            <div class="alert alert-danger" *ngIf="email.hasError('required')">L'adresse email est requise</div>
+                            <div class="alert alert-danger" *ngIf="email.hasError('pattern')">La forme de l'adresse email est incorrecte</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button type="submit" id="btnSend">Envoyer</button>
-        </form>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label></label>
+                        <input type="phone" class="form-control" style="color: azure;" name="phone" placeholder="Numéro de téléphone" #phone="ngModel" [(ngModel)]="person.phone" minlength="10" [ngClass]="{'is.invalid': phone.touched && phone.invalid}" required />
+                        <div class="warning" *ngIf="phone.invalid && (phone.dirty || phone.touched)">
+                            <div class="alert alert-danger" *ngIf="phone.hasError('required')">Le numéro de téléphone est requis</div>
+                            <div class="alert alert-danger" *ngIf="phone.hasError('minlength')">Le numéro de télephone doit contenir moins de 10 chiffres</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <label></label>
+                        <input type="text" class="form-control" name="subject" placeholder="Sujet de Conversation" #subject="ngModel" [(ngModel)]="person.subject" minlength="10" [ngClass]="{'is.invalid': subject.touched && subject.invalid}" required />
+                        <div class="warning" *ngIf="subject.invalid && (subject.dirty || subject.touched)">
+                            <div class="alert alert-danger" *ngIf="subject.hasError('required')">Le sujet de conversation est requis</div>
+                            <div class="alert alert-danger" *ngIf="subject.hasError('minlength')">Le sujet de conversation doit contenir moins de 10 lettres</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label></label>
+                <textarea name="message" placeholder="Message" #message="ngModel" [(ngModel)]="person.message" minlength="400" cols="20" rows="7"></textarea>
+                <div class="warningTwo" *ngIf="message.invalid && (message.dirty || message.touched)">
+                    <div class="alert alert-danger" *ngIf="message.hasError('required')">Le message est requis</div>
+                    <div class="alert alert-danger" *ngIf="message.hasError('minlength')">Le message doit contenir moins de 400 lettres</div>
+                </div>
+            </div>
+            <button type="submit" id="btnSend" [disabled]="contact.invalid">ENVOYER</button>
+           </form>
+        </div>
     </div>
 </section>
 

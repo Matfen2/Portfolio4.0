@@ -247,47 +247,64 @@ body {
 #contact .contactModal {
   padding-right: 18px;
   padding-bottom: 20px;
-  width: 50%;
+  width: 40%;
   display: block;
   margin: 10px auto;
   border-radius: 40px;
   background-color: black;
   border: 1px solid black;
 }
-#contact .contactModal #contactMe {
+#contact .contactModal .form-area {
   margin-left: 10px;
   text-align: center;
 }
-#contact .contactModal #contactMe .col-lg-6 input {
+#contact .contactModal .form-area form .form-group .row .col-lg-6 input {
   width: 100%;
-  border: none;
-  padding: 5px;
-  color: white;
-  margin: 10px auto;
+  height: 40px;
+  font-size: 1.1em;
+  max-width: 300px;
+  border: 0px solid azure;
+  margin: 0px auto;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
+  font-family: RoundControl;
 }
-#contact .contactModal #contactMe .col-lg-12 textarea {
+#contact .contactModal .form-area form .form-group .row .col-lg-6 .warning {
+  margin-left: 28px;
+}
+#contact .contactModal .form-area form .form-group .row .col-lg-6 .warning .alert {
   width: 100%;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
+  max-width: 280px;
 }
-#contact .contactModal #btnSend {
+#contact .contactModal .form-area form .form-group textarea {
+  width: 95%;
+  font-size: 1.4em;
+  border-radius: 5px;
+  margin-top: 25px;
+  font-family: RoundControl;
+  border: 0px solid azure;
+}
+#contact .contactModal .form-area form .form-group .warningTwo {
+  margin-left: 30px;
+}
+#contact .contactModal .form-area form .form-group .warningTwo .alert {
+  width: 95%;
+  max-width: 800px;
+}
+#contact .contactModal .form-area form #btnSend {
+  color: azure;
   border: none;
   display: block;
   cursor: pointer;
-  margin: 0px auto;
+  margin: 8px auto;
   font-size: 1.2em;
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: darkred;
+  background-color: #075509;
   transition: all 0.25ms ease;
 }
-#contact .contactModal #btnSend:active {
+#contact .contactModal .form-area form #btnSend:active {
   transform: translateY(8px);
-  background-color: #075509;
+  background-color: darkred;
 }
 
 #sideCanvas {

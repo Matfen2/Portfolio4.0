@@ -19,28 +19,28 @@ interface ProjetDetail {
 })
 export class ShowProjetComponent implements OnInit {
   projetId!: number;
-  projetData: ProjetDetail | undefined; // Utilisez le type ProjetDetail ici
+  projetData: ProjetDetail | undefined;
 
   projetDetails: ProjetDetail[] = [
     {
       id: 1,
-      name: 'STARFIELD',
-      mainPict: '/assets/pict/projets/starfieldSite.png',
+      name: 'HEAL GAMER',
+      mainPict: '/assets/pict/projets/healGamerSite.png',
       langageOne: 'ANGULAR',
       langageTwo: 'TYPESCRIPT',
       langageThree: 'SCSS',
-      hrefGithub: 'https://github.com/Matfen2/Starfield',
-      hrefSite: 'https://starfield-first-db9775bbe509.herokuapp.com/main-page',
+      hrefGithub: 'https://github.com/Matfen2/HealGamer',
+      hrefSite: 'https://heal-gamer-1049ede15084.herokuapp.com/main-page',
     },
     {
       id: 2,
-      name: 'BETHESDA GAME STUDIO',
-      mainPict: '/assets/pict/projets/bethesdaSite.png',
+      name: 'BACK WORLD',
+      mainPict: '/assets/pict/projets/backWorldSite.png',
       langageOne: 'ANGULAR',
       langageTwo: 'TYPESCRIPT',
       langageThree: 'SCSS',
-      hrefGithub: 'https://github.com/Matfen2/BethesdaGamesStudio',
-      hrefSite: '',
+      hrefGithub: 'https://github.com/Matfen2/BackWorld',
+      hrefSite: 'https://back-world-2b7ce022df91.herokuapp.com/main-page',
     },
     {
       id: 3,

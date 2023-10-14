@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ShowComponent } from './show/show.component';
 import { ProjetsComponent } from './projets/projets.component';
@@ -16,6 +17,7 @@ const routesProjets: Routes = [
 @NgModule({
   declarations: [ShowComponent, ProjetsComponent, ShowProjetComponent, JobsDirective],
   imports: [
+    FormsModule,
     CommonModule,
     RouterModule.forChild(routesProjets)
   ]
