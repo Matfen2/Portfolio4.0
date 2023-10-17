@@ -30,7 +30,7 @@ export class ShowProjetComponent implements OnInit {
       langageTwo: 'TYPESCRIPT',
       langageThree: 'SCSS',
       hrefGithub: 'https://github.com/Matfen2/HealGamer',
-      hrefSite: 'https://heal-gamer-1049ede15084.herokuapp.com/main-page',
+      hrefSite: 'https://matfen2.github.io/test-second-deploy-github/',
     },
     {
       id: 2,
@@ -59,9 +59,16 @@ export class ShowProjetComponent implements OnInit {
   ngOnInit(): void {
     this.routes.params.subscribe((params) => {
       this.projetId = +params['id'];
-      this.projetData = this.projetDetails.find(
-        (projet) => projet.id === this.projetId
-      );
+      try {
+        this.projetData = this.projetDetails.find(
+          (projet) => projet.id === this.projetId
+        );
+      } catch (error) {
+        console.error(
+          'Erreur lors de la récupération des données du projet :',
+          error
+        );
+      }
     });
   }
 }
